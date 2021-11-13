@@ -1,0 +1,22 @@
+<p>home</p>
+<!-- <p *ngIf='isGood; else notGood'>
+  все гуд asdfgb
+</p>
+<ng-template #isGoodTempl>
+  <p>
+    все гуд
+  </p>
+</ng-template>
+<ng-template #notGood>
+  <p>
+    не гуд
+  </p>
+</ng-template> -->
+
+<button (click)="toggle()">toggle</button>
+
+<div>
+  <p *ngFor="let name of names">
+    {{name}}
+  </p>
+</div>

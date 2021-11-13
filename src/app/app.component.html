@@ -1,14 +1,15 @@
 <div class="container">
   <header class="header">
-    <p [id]="superClass">{{title}}</p>
+    <!-- <p [id]="superClass">{{title}}</p> -->
+    <app-header></app-header>
   </header>
   <main class="main" (click)='outputHello()'>
-    main
+    <router-outlet></router-outlet>
   </main>
   <div class="sidebar">
     sidebar
   </div>
   <footer class="footer">
-    <input type="text" [(ngModel)]="title">
+    <input type="text" [(ngModel)]="superClass">
   </footer>
 </div>
